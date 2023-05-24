@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+#content {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.infoPg {
+  width: 30%;
+  height: 100%;
+
+  text-align: center;
+}
+.PfPic > img {
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.PfPic {
+  width: 50%;
+  margin: 20% auto;
+}
+.musiumPg {
+  display: flex;
+  background-color: black;
+  height: 100%;
+  width: 70%;
+
+  overflow-x: auto;
+
+  align-items: center;
+}
+.musiumPg > div {
+  margin: 10%;
+}
+.musiumPg > div > img {
+  width: 400px;
+}
