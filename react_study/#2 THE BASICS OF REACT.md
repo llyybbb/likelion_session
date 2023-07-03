@@ -3,7 +3,7 @@
 react JS는 UI를 interactive하게 만들어줌.  
 js코드보다 좀 더 간단.
 
-![js code](image.png)
+![js code](image.png)  
 위는 이전에 하던 js 코드이다.  
 버튼을 누른 횟수를 카운트하는 간단한 프로그램인데 코드가 꽤 된다.  
 react는 이를 더 간단하게 할 수 있다.
