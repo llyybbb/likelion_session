@@ -19,6 +19,6 @@ react는 이를 더 간단하게 할 수 있다.
  <script
     crossorigin
     src="https://unpkg.com/browse/react@18.2.0/umd/react.production.min.js">   
-   에서 "browse"를 지웠더니   
-    ![image](https://github.com/llyybbb/likelion_session/assets/105144795/66365661-5f0c-4598-a715-f3be27de9777)   
+ 에서 "browse"를 지웠더니   
+ ![image](https://github.com/llyybbb/likelion_session/assets/105144795/66365661-5f0c-4598-a715-f3be27de9777)   
          잘 동작한다.
