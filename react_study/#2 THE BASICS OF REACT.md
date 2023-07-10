@@ -11,15 +11,16 @@ js코드보다 좀 더 간단.
 react는 이를 더 간단하게 할 수 있다.
 
 ![react CDN 에러](image-1.png)  
-이제 react를 사용하려는데 자꾸 에러가 난다.  
-
+이제 react를 사용하려는데 자꾸 에러가 난다.
 
 링크를 엉뚱한 곳으로 연결했었다.
+
 ```
  <script
     crossorigin
     src="https://unpkg.com/browse/react@18.2.0/umd/react.production.min.js">
 ```
- 에서 "browse"를 지웠더니   
- ![image](https://github.com/llyybbb/likelion_session/assets/105144795/66365661-5f0c-4598-a715-f3be27de9777)   
-         잘 동작한다.
+
+에서 "browse"를 지웠더니  
+ ![image](https://github.com/llyybbb/likelion_session/assets/105144795/66365661-5f0c-4598-a715-f3be27de9777)  
+ 잘 동작한다.
