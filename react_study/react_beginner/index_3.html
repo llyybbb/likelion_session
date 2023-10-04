@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/@babel/standalone/babel.min.js"
+  ></script>
+  <script type="text/babel">
+    const root = document.getElementById('root') // reactDOM을 이용하기 위해 root 먼저 찾기.
+    let counter = 0
+
+    function counterUp() {
+      counter = counter + 1
+      render()
+    }
+    function render() {
+      ReactDOM.render(<Container />, root)
+    }
+    function Container() {
+      return (
+        <div>
+          <h3> Total clicks: {counter} </h3>
+          <button onClick={counterUp}>click me</button>
+        </div>
+      )
+    }
+
+    render()
+    /*리턴 함수를 쓰던 안쓰던 값은 출력이 되지만
+    리턴 함수를 쓰면 함수 외부에서도 결과값이 유효함
+    ->함수 안에서 계산한 결과값을 리턴을 통해 함수호출한 쪽으로 되돌려주니까!
+    리턴 함수를 안쓰면 그 결과값은 함수안에서 끝나고 종료.
+    */
+    /*변경된 부분만 업데이트된다는게 왜 좋은건가 했는데 리액트가 아닌 경우, 일반
+    자바스크립트를 쓴 브라우저는 노드정보가 바뀔때마다 노드트리를 처음부터 다시
+    생성한대요 5단계에 걸쳐서. 근데 리액트는 가상돔을 써서 우리 시야에 보이는 부분만
+    수정해서 보여주고 모든 업뎃이 끝나면 일괄로 합쳐서 실제 돔에 던져준다고합니다!
+    이거 면접때 많이 물어보는거래요. 브라우저 작동원리와 연관있음. 니꼬쌤이 말하는
+    “렌더”가, 렌더트리를 말씀하시는 것 같은데 프엔은 이 렌더트리 단계를 얼마나
+    최적화하는가가 중요하다더라구요! 이상입니다 __*/
+  </script>
+</html>

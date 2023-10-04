@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/@babel/standalone/babel.min.js"
+  ></script>
+  <script type="text/babel">
+    const root = document.getElementById('root') // reactDOM을 이용하기 위해 root 먼저 찾기.
+
+    function APP() {
+      const [counter, setCounter] = React.useState(0)
+      //React.useState는 [date,f]를 반환함. f는 data값을 바꿔줄 함수.
+      //counter=data=0, setCounter=f로 꺼냄.
+      function counterUp() {
+        setCounter(counter + 1)
+        //useState:state가 바뀌면 리렌더링.-> render함수 만들 필요 x
+      }
+      return (
+        <div>
+          <h3> Total clicks: {counter} </h3>
+          <button onClick={counterUp}>click me</button>
+        </div>
+      )
+    }
+
+    ReactDOM.render(<APP />, root)
+  </script>
+</html>

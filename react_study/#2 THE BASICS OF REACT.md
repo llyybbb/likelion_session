@@ -24,3 +24,5 @@ react는 이를 더 간단하게 할 수 있다.
 에서 "browse"를 지웠더니  
  ![image](https://github.com/llyybbb/likelion_session/assets/105144795/66365661-5f0c-4598-a715-f3be27de9777)  
  잘 동작한다.
+
+React JS 의 핵심은 HTML의 요소를 "업데이트" 할 수 있다는 점.
